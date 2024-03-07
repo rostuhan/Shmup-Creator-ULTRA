@@ -1,6 +1,5 @@
+import xml.etree.ElementTree as ET
 def UltraTree(Amount):
-	import xml.etree.ElementTree as ET
-	import copy
 	File = "decomp/old.weapons"
 	with open(File, "r") as f:
 		Tree = ET.fromstring("<root>" + f.read() + "</root>")
